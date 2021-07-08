@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>grid</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+  <style>
+    .rows {
+      margin-top: 1rem;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 1px;
+    }
+
+    .rows > div {
+      padding: 3rem 0;
+      background-color: rebeccapurple;
+      color: #fff;
+      text-align: center;
+    }
+
+    .item1 {
+      grid-column: 1/3;
+    }
+
+    .item3 {
+      grid-row: 2 / 4;
+    }
+
+    .item4 {
+      grid-column: 2/4;
+    }
+
+
+    .row {
+      margin-top: 1rem;
+    }
+
+    .row > div {
+      padding: 2rem;
+      color: #fff;
+      background-color: red;
+      border:1px solid #fff;
+      text-align: center;
+    }
+
+    .imga-thumbnail {
+      background-color: #fff;
+      border:1px solid #999;
+      padding: 0.3rem;
+      border-radius: 0.2rem;
+
+    }
+  </style>
+
+
+</head>
+<body>
+  <div class="container">
+    <div class="rows">
+      <div class="box item1">1</div>
+      <div class="box">2</div>
+      <div class="box item3">3</div>
+      <div class="box item4">4</div>
+      <div class="box">5</div>
+      <div class="box">6</div>
+    </div>
+  
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-2 col-md-4 col-sm-6 ">111</div>
+      <div class="col-lg-2 col-md-4 col-sm-6 ">111</div>
+      <div class="col-lg-2 col-md-4 col-sm-6 ">111</div>
+      <div class="col-lg-2 col-md-4 col-sm-6 ">111</div>
+      <div class="col-lg-2 col-md-4 col-sm-6 ">111</div>
+      <div class="col-lg-2 col-md-4 col-sm-6 ">111</div>
+    </div>
+  </div>
+
+  <div class="image-container">
+    <img src="./images/art-design-6.jpg"  class="img-thumbnail" alt="">
+    <img src="./images/art-design-6.jpg"  class="rounded" alt="">
+  </div>
+
+
+</body>
+</html>
